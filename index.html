@@ -1,78 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tri Yoga Febriansyah</title>
-    <link rel="stylesheet" href="./style.css">
-</head>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
 
-<body>
+  <body>
     <header>
-        <nav>
-            <img src="https://media.discordapp.net/attachments/1029421569530929264/1029452214059667476/854049991865401374.gif?ex=686b6156&is=686a0fd6&hm=9b7e6a95fd4e1f9c0ceaedefe5249d5ccab6f62241ed393bba226d5e432c1e98&="
-                alt="">
-            <ul>
-                <li>Home</li>
-                <li>About</li>
-                <li>Project</li>
-                <li>Contact</li>
-            </ul>
-        </nav>
+      <nav>
+        <img class="logo" src="/assets/skalter.gif" alt="" />
+        <ul class="nav">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#project">Project</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
     </header>
     <main>
-        <section class="home">
-            <img src="https://picsum.photos/400/300" alt="">
-            <article>
-                <h2>Front-End Developer</h2>
-            </article>
-        </section>
-        <section class="about">
-            <h3>About me</h3>
-            <p>I am a Front-End Developer with a strong interest in developing responsive and user-friendly web
-                interfaces. Ready to contribute to building optimal user experiences through modern and functional
-                interface design.
+      <section id="home" class="home">
+        <img src="https://picsum.photos/400/300" alt="" />
+        <article>
+          <h2>Tri Yoga Febriansyah</h2>
+          <h3>Fullstack Developer</h3>
+        </article>
+      </section>
+      <section id="about" class="about">
+        <h3 class="about-title">About me</h3>
+        <p class="about-desc">
+          I am a Front-End Developer with a strong interest in developing
+          responsive and user-friendly web interfaces. Ready to contribute to
+          building optimal user experiences through modern and functional
+          interface design.
+        </p>
+        <h5 class="skill-title">Skill</h5>
+        <ul class="skill-group">
+          <li class="skill-item">
+            <a href="https://developer.mozilla.org/en-US/docs/Web/HTML">
+              <img src="./assets/html.png" alt="HTML" />
+            </a>
+          </li>
+          <li class="skill-item">
+            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS"
+              ><img src="./assets/css.png" alt="CSS"
+            /></a>
+          </li>
+          <li class="skill-item">
+            <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+              ><img src="./assets/js.png" alt="JavaScript"
+            /></a>
+          </li>
+          <li class="skill-item">
+            <a href="https://react.dev/"
+              ><img src="./assets/react.png" alt="React"
+            /></a>
+          </li>
+          <li class="skill-item">
+            <a href="https://vuejs.org/"
+              ><img src="./assets/vue.png" alt="Vue"
+            /></a>
+          </li>
+          <li class="skill-item">
+            <a href="https://tailwindcss.com/"
+              ><img src="./assets/tailwind.png" alt="Tailwind"
+            /></a>
+          </li>
+          <li class="skill-item">
+            <a href="https://getbootstrap.com/"
+              ><img src="./assets/bootstrap.png" alt="Bootstrap" />
+            </a>
+          </li>
+        </ul>
+      </section>
+      <section id="project" class="project">
+        <h3 class="project-title">Project</h3>
+        <ul class="project-group">
+          <li class="project-item">
+            <h4 class="project-item-title">Qarpa</h4>
+            <img class="project-item-img" src="/assets/qarpa.png" alt="" />
+            <p class="project-item-desc">
+              Qarpa is a platform designed to help small and medium enterprises
+              (SMEs) manage their businesses more easily and efficiently. It
+              offers features like POS, Inventory System, WMS, and Resource
+              Planning Modules through both web and mobile applications,
+              enabling better organization, transparency, and increased
+              profitability.
             </p>
-            <h4>Skill</h4>
-            <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-                <li>React</li>
-                <li>Vue</li>
-                <li>Tailwind</li>
-                <li>Bootstrap</li>
-            </ul>
-        </section>
-        <section class="project">
-            <h3>List Project</h3>
-            <ol>
-                <li>
-                    <h4>Qarpa</h4>
-                    <!-- <img src="https://media.discordapp.net/attachments/1029421569530929264/1391399407571963924/Instagram_post_-_6-min.png?ex=686bc12d&is=686a6fad&hm=9c25c68cc6cbcbccaabb8d27a18f45ef513317aac0a33edb2aa9ddf77b5f8aaf&=&format=webp&quality=lossless&width=722&height=722" alt=""> -->
-                    <p>Qarpa is a platform designed to help small and medium enterprises (SMEs) manage their businesses
-                        more easily and efficiently. It offers features like POS, Inventory System, WMS, and Resource
-                        Planning Modules through both web and mobile applications, enabling better organization,
-                        transparency, and increased profitability.</p>
-                </li>
-                <li>Project 2</li>
-            </ol>
-        </section>
-        <section class="contact">
-            <h3>Contact Me</h3>
-            <form action="">
-                <label for="name">Name</label>
-                <input type="text" id="name">
-                <label for="email">Email</label>
-                <input type="email" id="email">
-                <label for="message">Message</label>
-                <textarea type="text" id="message"></textarea>
-                <input type="button" value="submit">
-            </form>
-        </section>
+          </li>
+          <li class="project-item">
+            <h4 class="project-item-title">TBD</h4>
+          </li>
+        </ul>
+      </section>
+      <section id="contact" class="contact">
+        <h3 class="contact-title">Contact Me</h3>
+        <form class="contact-form">
+          <label for="name">Name</label>
+          <input type="text" id="name" />
+          <label for="email">Email</label>
+          <input type="email" id="email" />
+          <label for="message">Message</label>
+          <textarea type="text" id="message"></textarea>
+          <input type="button" value="submit" />
+        </form>
+      </section>
     </main>
-    <footer>Created by <a href="https://github.com/triyoga884" target="_blank">TriYogaF</a></footer>
-</body>
-
+    <footer>
+      Created by
+      <a href="https://github.com/triyoga884" target="_blank">TriYogaF</a>
+    </footer>
+  </body>
 </html>
