@@ -1,42 +1,192 @@
-/* Simple CSS Reset
+@import url('https://fonts.googleapis.com/css?family=Capriola:700|Capriola:400');
+
+:root {
+  --text: #edf6e8;
+  --background: #0c1408;
+  --primary: #a9d494;
+  --secondary: #307836;
+  --accent: #51b969;
+}
+
+/* Simple CSS Reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-html,
-body {
-  height: 100%;
-}
-
-body {
-  line-height: 1.5;
-  font-family: sans-serif;
-  background: #fff;
-  color: #000;
-}
-
-img,
-picture,
-video,
-canvas,
-svg {
-  display: block;
-  max-width: 100%;
-}
-
-button,
-input,
-select,
-textarea {
-  font: inherit;
-  background: none;
-  border: none;
-  outline: none;
-}
-
 a {
-  color: inherit;
+  color: black;
   text-decoration: none;
-} */
+}
+
+li {
+  list-style: none;
+}
+
+/* font */
+
+body {
+  font-family: 'Capriola';
+  font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Capriola';
+  font-weight: 700;
+}
+
+html {
+  font-size: 100%;
+} /* 16px */
+
+h1 {
+  font-size: 4.21rem; /* 67.36px */
+}
+
+h2 {
+  font-size: 3.158rem; /* 50.56px */
+}
+
+h3 {
+  font-size: 2.369rem; /* 37.92px */
+}
+
+h4 {
+  font-size: 1.777rem; /* 28.48px */
+}
+
+h5 {
+  font-size: 1.333rem; /* 21.28px */
+}
+
+small {
+  font-size: 0.75rem; /* 12px */
+}
+
+/* navbar */
+
+.logo {
+  border-radius: 50%;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+nav,
+footer {
+  background-color: var(--primary);
+}
+
+.nav {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  padding: 0;
+}
+
+.nav a {
+  font-size: 28px;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.nav a:hover {
+  background-color: var(--secondary);
+  transition: all 0.3s ease-out;
+  color: var(--text);
+}
+
+/* main  */
+main {
+  max-width: 1200px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 200px;
+  margin: 200px auto;
+}
+
+/* home */
+.home {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+article {
+  text-align: center;
+}
+
+/* about  */
+.about-title,
+.about-desc,
+.skill-title,
+.project-title {
+  margin-bottom: 26px;
+}
+
+.skill-group {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.skill-item img,
+.project-item img {
+  width: 150px;
+}
+
+.project-group {
+  display: flex;
+  gap: 20px;
+}
+
+.project-item {
+  width: 400px;
+  padding: 14px;
+  border: 2px solid var(--background);
+  border-radius: 4px;
+}
+
+.project-item:hover {
+  border: 2px solid var(--primary);
+}
+
+.project-item-desc {
+  text-align: justify;
+}
+
+.project-item-title {
+  text-align: center;
+}
+
+.project-item-img {
+  display: block;
+  margin: 10px auto;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  border-radius: 4px;
+}
+
+footer {
+  text-align: center;
+  padding: 40px 0;
+}
