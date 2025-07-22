@@ -4,110 +4,160 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tri Yoga Febriansyah</title>
-    <link rel="stylesheet" href="./style.css" />
+    <!-- <link rel="stylesheet" href="./style.css" /> -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
 
-  <body>
-    <header>
-      <nav>
-        <img class="logo" src="./assets/skalter.gif" alt="" />
-        <ul class="nav">
+  <body class="bg-blue-100">
+    <header class="sticky top-0">
+      <nav class="flex justify-between items-center mb-10 bg-white p-2">
+        <img
+          class="logo rounded-full w-20"
+          src="./assets/skalter.gif"
+          alt="home-gif"
+        />
+        <ul class="hidden gap-4 lg:flex">
           <li><a href="#home">Home</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#project">Project</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
+        <img class="w-20 lg:hidden" src="./assets/menu.png" alt="menu" />
       </nav>
     </header>
     <main>
-      <section id="home" class="home">
-        <img src="https://picsum.photos/400/300" alt="" />
-        <article>
-          <h2>Tri Yoga Febriansyah</h2>
-          <h3>Fullstack Developer</h3>
-        </article>
-      </section>
-      <section id="about" class="about">
-        <h3 class="about-title">About me</h3>
-        <p class="about-desc">
-          I am a Front-End Developer with a strong interest in developing
-          responsive and user-friendly web interfaces. Ready to contribute to
-          building optimal user experiences through modern and functional
-          interface design.
-        </p>
-        <h5 class="skill-title">Skill</h5>
-        <ul class="skill-group">
-          <li class="skill-item">
-            <a href="https://developer.mozilla.org/en-US/docs/Web/HTML">
-              <img src="./assets/html.png" alt="HTML" />
-            </a>
-          </li>
-          <li class="skill-item">
-            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS"
-              ><img src="./assets/css.png" alt="CSS"
-            /></a>
-          </li>
-          <li class="skill-item">
-            <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
-              ><img src="./assets/js.png" alt="JavaScript"
-            /></a>
-          </li>
-          <li class="skill-item">
-            <a href="https://react.dev/"
-              ><img src="./assets/react.png" alt="React"
-            /></a>
-          </li>
-          <li class="skill-item">
-            <a href="https://vuejs.org/"
-              ><img src="./assets/vue.png" alt="Vue"
-            /></a>
-          </li>
-          <li class="skill-item">
-            <a href="https://tailwindcss.com/"
-              ><img src="./assets/tailwind.png" alt="Tailwind"
-            /></a>
-          </li>
-          <li class="skill-item">
-            <a href="https://getbootstrap.com/"
-              ><img src="./assets/bootstrap.png" alt="Bootstrap" />
-            </a>
-          </li>
-        </ul>
-      </section>
-      <section id="project" class="project">
-        <h3 class="project-title">Project</h3>
-        <ul class="project-group">
-          <li class="project-item">
-            <h4 class="project-item-title">Qarpa</h4>
-            <img class="project-item-img" src="./assets/qarpa.png" alt="" />
-            <p class="project-item-desc">
-              Qarpa is a platform designed to help small and medium enterprises
-              (SMEs) manage their businesses more easily and efficiently. It
-              offers features like POS, Inventory System, WMS, and Resource
-              Planning Modules through both web and mobile applications,
-              enabling better organization, transparency, and increased
-              profitability.
-            </p>
-          </li>
-          <li class="project-item">
-            <h4 class="project-item-title">TBD</h4>
-          </li>
-        </ul>
-      </section>
-      <section id="contact" class="contact">
-        <h3 class="contact-title">Contact Me</h3>
-        <form class="contact-form">
-          <label for="name">Name</label>
-          <input type="text" id="name" />
-          <label for="email">Email</label>
-          <input type="email" id="email" />
-          <label for="message">Message</label>
-          <textarea type="text" id="message"></textarea>
-          <input type="button" value="submit" />
-        </form>
-      </section>
+      <div class="container">
+        <section
+          id="home"
+          class="home my-6 bg-white rounded-lg p-6 w-9/10 mx-auto shadow-lg"
+        >
+          <img
+            class="w-[90%] mx-auto rounded-lg my-6"
+            src="https://picsum.photos/500"
+            alt="hero foto"
+          />
+          <article class="text-center">
+            <h1 class="text-2xl">Tri Yoga Febriansyah</h1>
+            <h2 class="text-xl">Fullstack Developer</h2>
+          </article>
+        </section>
+        <section
+          id="about"
+          class="about my-6 bg-white rounded-lg p-6 w-9/10 mx-auto shadow-lg"
+        >
+          <h2 class="about-title text-center text-xl mb-4">About me</h2>
+          <p class="about-desc">
+            I am a Front-End Developer with a strong interest in developing
+            responsive and user-friendly web interfaces. Ready to contribute to
+            building optimal user experiences through modern and functional
+            interface design.
+          </p>
+          <h3 class="skill-title text-center text-lg my-4">Skill</h3>
+          <ul class="skill-group flex flex-wrap justify-center gap-6">
+            <li class="skill-item w-16">
+              <a href="https://developer.mozilla.org/en-US/docs/Web/HTML">
+                <img src="./assets/html.png" alt="HTML" />
+              </a>
+            </li>
+            <li class="skill-item w-16">
+              <a href="https://developer.mozilla.org/en-US/docs/Web/CSS"
+                ><img src="./assets/css.png" alt="CSS"
+              /></a>
+            </li>
+            <li class="skill-item w-16">
+              <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+                ><img src="./assets/js.png" alt="JavaScript"
+              /></a>
+            </li>
+            <li class="skill-item w-16">
+              <a href="https://react.dev/"
+                ><img src="./assets/react.png" alt="React"
+              /></a>
+            </li>
+            <li class="skill-item w-16">
+              <a href="https://vuejs.org/"
+                ><img src="./assets/vue.png" alt="Vue"
+              /></a>
+            </li>
+            <li class="skill-item w-16">
+              <a href="https://tailwindcss.com/"
+                ><img src="./assets/tailwind.png" alt="Tailwind"
+              /></a>
+            </li>
+            <li class="skill-item w-16">
+              <a href="https://getbootstrap.com/"
+                ><img src="./assets/bootstrap.png" alt="Bootstrap" />
+              </a>
+            </li>
+          </ul>
+        </section>
+        <section
+          id="project"
+          class="project my-6 bg-white rounded-lg p-6 w-9/10 mx-auto shadow-lg"
+        >
+          <h2 class="project-title text-center text-xl mb-4">Project</h2>
+          <ul class="project-group">
+            <li class="project-item">
+              <img
+                class="project-item-img w-40 mx-auto mb-4"
+                src="./assets/qarpa.png"
+                alt="qarpa"
+              />
+              <p class="project-item-desc">
+                Qarpa is a platform designed to help small and medium
+                enterprises (SMEs) manage their businesses more easily and
+                efficiently. It offers features like POS, Inventory System, WMS,
+                and Resource Planning Modules through both web and mobile
+                applications, enabling better organization, transparency, and
+                increased profitability.
+              </p>
+            </li>
+            <li class="project-item">
+              <h3 class="project-item-title">TBD</h3>
+            </li>
+          </ul>
+        </section>
+        <section
+          id="contact"
+          class="contact my-6 bg-white rounded-lg p-6 w-9/10 mx-auto shadow-lg"
+        >
+          <h3 class="contact-title text-center text-xl mb-4">Contact Me</h3>
+          <form class="contact-form flex flex-col gap-4">
+            <label for="name">Name</label>
+            <input
+              class="p-4"
+              required
+              placeholder="elqlyn"
+              type="text"
+              id="name"
+            />
+            <label for="email">Email</label>
+            <input
+              class="p-4"
+              required
+              placeholder="elqlyn@mail.to"
+              type="email"
+              id="email"
+            />
+            <label for="message">Message</label>
+            <textarea
+              class="p-4"
+              required
+              placeholder="lorem ipsum dolor sit amet"
+              type="text"
+              id="message"
+              cols="4"
+            ></textarea>
+            <input
+              class="p-4 rounded-lg hover:bg-blue-300"
+              type="button"
+              value="Submit"
+            />
+          </form>
+        </section>
+      </div>
     </main>
-    <footer>
+    <footer class="text-center bg-white p-4 mt-6">
       Created by
       <a href="https://github.com/triyoga884" target="_blank">TriYogaF</a>
     </footer>
