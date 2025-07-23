@@ -4,19 +4,20 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tri Yoga Febriansyah</title>
+    <link rel="icon" href="./assets/skalter.gif" type="image/gif" />
     <!-- <link rel="stylesheet" href="./style.css" /> -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Cactus+Classical+Serif&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
       rel="stylesheet"
     />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <style>
       body {
-        font-family: 'Cactus Classical Serif', serif;
+        font-family: 'Rubik', sans-serif;
       }
     </style>
   </head>
@@ -29,17 +30,42 @@
           src="./assets/skalter.gif"
           alt="home-gif"
         />
-        <ul class="hidden gap-4 lg:flex">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#project">Project</a></li>
-          <li><a href="#contact">Contact</a></li>
+        <ul class="hidden gap-4 lg:flex text-2xl">
+          <li>
+            <a
+              class="p-4 hover:bg-blue-100 rounded-lg trasition-color duration-500"
+              href="#home"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              class="p-4 hover:bg-blue-100 rounded-lg trasition-color duration-500"
+              href="#about"
+              >About</a
+            >
+          </li>
+          <li>
+            <a
+              class="p-4 hover:bg-blue-100 rounded-lg trasition-color duration-500"
+              href="#project"
+              >Project</a
+            >
+          </li>
+          <li>
+            <a
+              class="p-4 hover:bg-blue-100 rounded-lg trasition-color duration-500"
+              href="#contact"
+              >Contact</a
+            >
+          </li>
         </ul>
         <img class="w-20 lg:hidden" src="./assets/menu.png" alt="menu" />
       </nav>
     </header>
     <main>
       <div class="container mx-auto">
+        <!-- section home -->
         <section
           id="home"
           class="home my-6 bg-white rounded-lg p-6 w-9/10 mx-auto shadow-lg lg:flex lg:items-center"
@@ -54,6 +80,7 @@
             <h2 class="text-3xl">Fullstack Developer</h2>
           </article>
         </section>
+        <!-- section about -->
         <section
           id="about"
           class="about my-6 bg-white rounded-lg p-6 w-9/10 mx-auto shadow-lg"
@@ -108,6 +135,7 @@
             </li>
           </ul>
         </section>
+        <!-- section project -->
         <section
           id="project"
           class="project my-6 bg-white rounded-lg p-6 w-9/10 mx-auto shadow-lg"
@@ -174,6 +202,7 @@
             </li>
           </ul>
         </section>
+        <!-- section contact -->
         <section
           id="contact"
           class="contact my-6 bg-white rounded-lg p-6 w-9/10 mx-auto shadow-lg"
@@ -182,11 +211,13 @@
             Contact Me
           </h2>
           <div class="contact-content lg:flex items-center gap-6">
-            <div
-              class="img-contact hidden w-1/3 lg:grid grid-cols-2 justify-items-center"
-            >
+            <div class="img-contact hidden w-1/3 lg:grid grid-cols-2">
               <!-- linkedin icon -->
-              <a href="https://www.linkedin.com/in/tri-yoga/" target="_blank">
+              <a
+                class="flex justify-end"
+                href="https://www.linkedin.com/in/tri-yoga/"
+                target="_blank"
+              >
                 <svg
                   class="w-24 text-gray-500 hover:text-blue-500 transition-color duration-300"
                   xmlns="http://www.w3.org/2000/svg"
@@ -214,7 +245,11 @@
                 </svg>
               </a>
               <!-- mail icon -->
-              <a href="mailto:triyoga884@gmail.com">
+              <a
+                class="flex justify-end"
+                href="mailto:triyoga884@gmail.com"
+                target="_blank"
+              >
                 <svg
                   class="w-24 text-gray-500 hover:text-blue-500 transition-color duration-300"
                   fill="currentColor"
@@ -228,7 +263,7 @@
                 </svg>
               </a>
               <!-- instagram icon -->
-              <a href="https://www.instagram.com/yggdraz/">
+              <a href="https://www.instagram.com/yggdraz" target="_blank">
                 <svg
                   class="w-24 text-gray-500 hover:text-blue-500 transition-color duration-300"
                   fill="currentColor"
