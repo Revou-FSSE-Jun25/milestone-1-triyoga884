@@ -1,13 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="scroll-smooth" lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tri Yoga Febriansyah</title>
-    <link rel="icon" href="./assets/skalter.gif" type="image/gif" />
-    <!-- <link rel="stylesheet" href="./style.css" /> -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./assets/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./assets/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./assets/favicon/site.webmanifest" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -22,114 +36,165 @@
     </style>
   </head>
 
-  <body class="bg-blue-100">
+  <body id="top" class="bg-linear-to-tr from-[#fdfbfb] to-[#ebedee]">
     <header class="sticky top-0">
-      <nav class="flex justify-between items-center mb-10 bg-white p-2">
-        <img
-          class="logo rounded-full w-20"
-          src="./assets/skalter.gif"
-          alt="home-gif"
-        />
-        <ul class="hidden gap-4 lg:flex text-2xl">
+      <!-- navbar -->
+      <nav
+        class="flex justify-between items-center mb-14 bg-white p-1 lg:p-4 shadow-lg"
+      >
+        <input type="checkbox" class="peer hidden" id="hamburger-toggle" />
+        <div class="logo-wrapper relative group flex items-center gap-2">
+          <img
+            class="logo rounded-full w-14 lg:w-20"
+            src="./assets/skalter.gif"
+            alt="home-gif"
+          />
+          <div
+            class="logo-text absoulute opacity-0 p-2 rounded-lg text-sm scale-90 bg-gray-300 group-hover:opacity-100 group-hover:scale-100 transition duration-300"
+          >
+            The Golden Age will return again!
+          </div>
+        </div>
+        <!-- nav menu -->
+        <label for="hamburger-toggle" class="p-2 lg:hidden cursor-pointer">
+          <span
+            class="block w-10 h-1 bg-black rounded-lg relative transition-all duration-300 before:content-[''] before:absolute before:w-full before:h-full before:bg-black before:rounded-lg before:-top-2 before:transition-all before:duration-300 after:content-[''] after:absolute after:w-full after:h-full after:bg-black after:rounded-lg after:-bottom-2 after:transition-all after:duration-300"
+          ></span
+        ></label>
+        <ul
+          class="absolute top-16 left-0 w-full bg-white justify-items-center max-h-0 overflow-hidden gap-4 peer-checked:max-h-[50rem] transition-all duration-800 shadow-lg lg:top-0 lg:static lg:w-auto lg:shadow-none lg:max-h-20 lg:flex text-2xl"
+        >
           <li>
             <a
-              class="p-4 hover:bg-blue-100 rounded-lg trasition-color duration-500"
+              class="p-4 hover:bg-green-100 rounded-lg inline-block hover:scale-110 transition-all duration-500"
               href="#home"
               >Home</a
             >
           </li>
           <li>
             <a
-              class="p-4 hover:bg-blue-100 rounded-lg trasition-color duration-500"
+              class="p-4 hover:bg-green-100 rounded-lg inline-block hover:scale-110 transition-all duration-500"
               href="#about"
               >About</a
             >
           </li>
           <li>
             <a
-              class="p-4 hover:bg-blue-100 rounded-lg trasition-color duration-500"
+              class="p-4 hover:bg-green-100 rounded-lg inline-block hover:scale-110 transition-all duration-500"
               href="#project"
               >Project</a
             >
           </li>
           <li>
             <a
-              class="p-4 hover:bg-blue-100 rounded-lg trasition-color duration-500"
+              class="p-4 hover:bg-green-100 rounded-lg inline-block hover:scale-110 transition-all duration-500"
               href="#contact"
               >Contact</a
             >
           </li>
         </ul>
-        <img class="w-20 lg:hidden" src="./assets/menu.png" alt="menu" />
+        <!-- <img
+          class="w-14 lg:w-20 lg:hidden"
+          src="./assets/menu.png"
+          alt="menu"
+        /> -->
       </nav>
     </header>
+
     <main>
       <div class="container mx-auto">
         <!-- section home -->
         <section
           id="home"
-          class="home my-6 bg-white rounded-lg p-6 w-9/10 mx-auto shadow-lg lg:flex lg:items-center"
+          class="home scroll-mt-32 my-25 bg-white rounded-4xl p-6 w-9/10 mx-auto shadow-lg lg:flex lg:items-center lg:justify-around gap-6"
         >
           <img
-            class="w-[90%] mx-auto rounded-lg my-6 lg:w-2/3"
-            src="./assets/hero.webp"
+            class="w-[60%] mx-auto rounded-full my-6 lg:w-1/3 lg:mx-0 shadow-lg"
+            src="./assets/profile.jpg"
             alt="hero foto"
           />
           <article class="text-center">
-            <h1 class="text-4xl">Tri Yoga Febriansyah</h1>
-            <h2 class="text-3xl">Fullstack Developer</h2>
+            <h1 class="text-3xl lg:text-5xl">
+              Hi, I’m Tri Yoga - Fullstack Developer
+            </h1>
+            <h2 class="text-xl lg:text-2xl mt-3">
+              A passionate Fullstack Developer crafting engaging digital
+              experiences.
+            </h2>
           </article>
         </section>
         <!-- section about -->
         <section
           id="about"
-          class="about my-6 bg-white rounded-lg p-6 w-9/10 mx-auto shadow-lg"
+          class="about my-25 bg-white rounded-4xl p-6 w-9/10 mx-auto shadow-lg scroll-mt-32"
         >
           <h2 class="about-title text-center text-3xl font-bold mb-4">
             About me
           </h2>
           <p class="about-desc text-center">
-            I am a Front-End Developer with a strong interest in developing
+            I am a Fullstack Developer with a strong interest in developing
             responsive and user-friendly web interfaces. Ready to contribute to
             building optimal user experiences through modern and functional
             interface design.
           </p>
-          <h3 class="skill-title text-center text-lg my-4">Skill</h3>
+          <h3 class="skill-title text-center text-lg my-4 font-bold">Skill</h3>
           <ul
             class="skill-group flex flex-wrap justify-center items-center gap-6"
           >
             <li class="skill-item w-16">
-              <a href="https://developer.mozilla.org/en-US/docs/Web/HTML">
+              <a
+                class="inline-block hover:scale-150 transition-all duration-300"
+                target="_blank"
+                href="https://developer.mozilla.org/en-US/docs/Web/HTML"
+              >
                 <img src="./assets/html.png" alt="HTML" />
               </a>
             </li>
             <li class="skill-item w-16">
-              <a href="https://developer.mozilla.org/en-US/docs/Web/CSS"
+              <a
+                class="inline-block hover:scale-150 transition-all duration-300"
+                target="_blank"
+                href="https://developer.mozilla.org/en-US/docs/Web/CSS"
                 ><img src="./assets/css.png" alt="CSS"
               /></a>
             </li>
             <li class="skill-item w-16">
-              <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+              <a
+                class="inline-block hover:scale-150 transition-all duration-300"
+                target="_blank"
+                href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
                 ><img src="./assets/js.png" alt="JavaScript"
               /></a>
             </li>
             <li class="skill-item w-16">
-              <a href="https://react.dev/"
+              <a
+                class="inline-block hover:scale-150 transition-all duration-300"
+                target="_blank"
+                href="https://react.dev/"
                 ><img src="./assets/react.png" alt="React"
               /></a>
             </li>
             <li class="skill-item w-16">
-              <a href="https://vuejs.org/"
+              <a
+                class="inline-block hover:scale-150 transition-all duration-300"
+                target="_blank"
+                href="https://vuejs.org/"
                 ><img src="./assets/vue.png" alt="Vue"
               /></a>
             </li>
             <li class="skill-item w-16">
-              <a href="https://tailwindcss.com/"
+              <a
+                class="inline-block hover:scale-150 transition-all duration-300"
+                target="_blank"
+                href="https://tailwindcss.com/"
                 ><img src="./assets/tailwind.png" alt="Tailwind"
               /></a>
             </li>
             <li class="skill-item w-16">
-              <a href="https://getbootstrap.com/"
+              <a
+                class="inline-block hover:scale-150 transition-all duration-300"
+                target="_blank"
+                href="https://getbootstrap.com/"
                 ><img src="./assets/bootstrap.png" alt="Bootstrap" />
               </a>
             </li>
@@ -138,14 +203,14 @@
         <!-- section project -->
         <section
           id="project"
-          class="project my-6 bg-white rounded-lg p-6 w-9/10 mx-auto shadow-lg"
+          class="project my-25 bg-white rounded-4xl p-6 w-9/10 mx-auto shadow-lg scroll-mt-32"
         >
           <h2 class="project-title text-center text-3xl font-bold mb-4">
             Project
           </h2>
           <ul class="project-group flex flex-col gap-16">
             <li
-              class="project-item p-4 rounded-md hover:shadow-lg transition-all duration-300 lg:flex"
+              class="project-item p-4 rounded-md group hover:shadow-lg transition-all duration-300 lg:flex"
             >
               <img
                 class="project-item-img w-40 mx-auto mb-4"
@@ -163,10 +228,12 @@
                   increased profitability.
                 </p>
                 <div class="project-tech-stack flex gap-4 mt-2">
-                  <span class="bg-blue-100 text-sm font-semibold p-2 rounded-xl"
+                  <span
+                    class="bg-green-100 text-sm font-semibold p-2 rounded-xl hover:-translate-y-2 transition-transform duration-300"
                     >Vue</span
                   >
-                  <span class="bg-blue-100 text-sm font-semibold p-2 rounded-xl"
+                  <span
+                    class="bg-green-100 text-sm font-semibold p-2 rounded-xl hover:-translate-y-2 transition-transform duration-300"
                     >Tailwind
                   </span>
                 </div>
@@ -191,10 +258,12 @@
                   increased profitability.
                 </p>
                 <div class="project-tech-stack flex gap-4 mt-2">
-                  <span class="bg-blue-100 text-sm font-semibold p-2 rounded-xl"
+                  <span
+                    class="bg-green-100 text-sm font-semibold p-2 rounded-xl hover:-translate-y-2 transition-transform duration-300"
                     >Vue</span
                   >
-                  <span class="bg-blue-100 text-sm font-semibold p-2 rounded-xl"
+                  <span
+                    class="bg-green-100 text-sm font-semibold p-2 rounded-xl hover:-translate-y-2 transition-transform duration-300"
                     >Tailwind
                   </span>
                 </div>
@@ -205,7 +274,7 @@
         <!-- section contact -->
         <section
           id="contact"
-          class="contact my-6 bg-white rounded-lg p-6 w-9/10 mx-auto shadow-lg"
+          class="contact my-25 bg-white rounded-4xl p-6 w-9/10 mx-auto shadow-lg scroll-mt-32"
         >
           <h2 class="contact-title text-center text-3xl font-bold mb-4">
             Contact Me
@@ -219,7 +288,7 @@
                 target="_blank"
               >
                 <svg
-                  class="w-24 text-gray-500 hover:text-blue-500 transition-color duration-300"
+                  class="w-24 text-gray-500 hover:text-green-400 hover:scale-110 transition-all duration-300"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 640 640"
                   fill="currentColor"
@@ -233,7 +302,7 @@
               <!-- github icon -->
               <a href="https://github.com/triyoga884" target="_blank">
                 <svg
-                  class="w-24 text-gray-500 hover:text-blue-500 transition-color duration-300"
+                  class="w-24 text-gray-500 hover:text-green-400 hover:scale-110 transition-all duration-300"
                   fill="currentColor"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 640 640"
@@ -251,7 +320,7 @@
                 target="_blank"
               >
                 <svg
-                  class="w-24 text-gray-500 hover:text-blue-500 transition-color duration-300"
+                  class="w-24 text-gray-500 hover:text-green-400 hover:scale-110 transition-all duration-300"
                   fill="currentColor"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 640 640"
@@ -265,7 +334,7 @@
               <!-- instagram icon -->
               <a href="https://www.instagram.com/yggdraz" target="_blank">
                 <svg
-                  class="w-24 text-gray-500 hover:text-blue-500 transition-color duration-300"
+                  class="w-24 text-gray-500 hover:text-green-400 hover:scale-110 transition-all duration-300"
                   fill="currentColor"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 640 640"
@@ -277,9 +346,14 @@
                 </svg>
               </a>
             </div>
-            <form class="contact-form flex flex-col gap-4 my-4 lg:w-2/3">
+            <form
+              action="koneksi.php"
+              method="post"
+              class="contact-form flex flex-col gap-4 my-4 lg:w-2/3"
+            >
               <label for="name">Name</label>
               <input
+                required
                 class="p-4 shadow-md border border-gray-200 rounded-lg"
                 required
                 placeholder="elqlyn"
@@ -288,6 +362,7 @@
               />
               <label for="email">Email</label>
               <input
+                required
                 class="p-4 shadow-md border border-gray-200 rounded-lg"
                 required
                 placeholder="elqlyn@mail.to"
@@ -296,6 +371,7 @@
               />
               <label for="message">Message</label>
               <textarea
+                required
                 class="p-4 shadow-md border border-gray-200 rounded-lg"
                 required
                 placeholder="lorem ipsum dolor sit amet"
@@ -303,19 +379,22 @@
                 id="message"
                 cols="4"
               ></textarea>
-              <input
-                class="p-4 rounded-lg bg-blue-100 hover:bg-blue-300"
-                type="button"
-                value="Submit"
-              />
+              <button
+                class="p-4 rounded-lg bg-green-100 hover:bg-green-300"
+                type="submit"
+              >
+                Submit
+              </button>
             </form>
           </div>
         </section>
       </div>
     </main>
-    <footer class="text-center bg-white p-4 mt-6">
+    <footer class="text-center bg-white p-4 mt-14">
       Created by
-      <a href="https://github.com/triyoga884" target="_blank">TriYogaF</a>
+      <a class="underline" href="https://github.com/triyoga884" target="_blank"
+        >TriYogaF</a
+      >
     </footer>
   </body>
 </html>
