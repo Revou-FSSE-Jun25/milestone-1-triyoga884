@@ -21,24 +21,23 @@ A personal portfolio website that showcases my professional profile as a Fullsta
 ### About Section
 
 - Professional introduction
+
+### Skills Section
+  
 - Skills showcase with interactive technology icons including:
   - HTML
   - CSS
   - JavaScript
   - React
-  - Vue.js
+  - Vue
   - Tailwind CSS
   - Bootstrap
+  - Git
 
 ### Project Section
 
 - **Qarpa**
   - A comprehensive business management platform for SMEs
-  - Features include:
-    - POS System
-    - Inventory Management
-    - WMS
-    - Resource Planning Modules
   - Available on web and mobile platforms
 
 ### Contact Section
@@ -77,15 +76,13 @@ cd milestone-1-triyoga884
 
 Simply open the index.html file in your preferred web browser. No special server setup is required as this is a static website.
 
-## Demo Links
+## Website Links
 
 You can explore the live site and inspect the CSS behavior yourself:
 
-Live demo:  
- https://revou-fsse-jun25.github.io/milestone-1-triyoga884/
+Live Website:  
+ https://tyf.my.id/
 
 ---
-
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/akoVEwkh)
 
 ![Link Website](./assets/skalter.gif)
