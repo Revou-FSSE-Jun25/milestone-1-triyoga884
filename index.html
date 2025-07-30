@@ -62,32 +62,39 @@
           ></span
         ></label>
         <ul
-          class="absolute py-2 top-16 left-0 w-full bg-white justify-items-center max-h-0 overflow-hidden gap-4 peer-checked:max-h-[50rem] transition-all duration-800 shadow-lg lg:top-0 lg:static lg:w-auto lg:shadow-none lg:max-h-20 lg:flex text-2xl"
+          class="absolute peer-checked:py-2 top-16 left-0 w-full bg-white justify-items-center max-h-0 overflow-hidden gap-2 peer-checked:max-h-[50rem] transition-all duration-800 shadow-lg lg:top-0 lg:static lg:w-auto lg:shadow-none lg:max-h-20 lg:flex lg:p-2 text-2xl"
         >
           <li>
             <a
-              class="p-4 hover:bg-green-100 rounded-lg inline-block hover:scale-110 transition-all duration-500"
+              class="p-4 hover:bg-gray-300 rounded-2xl inline-block hover:scale-105 transition-all duration-500"
               href="#home"
               >Home</a
             >
           </li>
           <li>
             <a
-              class="p-4 hover:bg-green-100 rounded-lg inline-block hover:scale-110 transition-all duration-500"
+              class="p-4 hover:bg-gray-300 rounded-2xl inline-block hover:scale-105 transition-all duration-500"
               href="#about"
               >About</a
             >
           </li>
           <li>
             <a
-              class="p-4 hover:bg-green-100 rounded-lg inline-block hover:scale-110 transition-all duration-500"
+              class="p-4 hover:bg-gray-300 rounded-2xl inline-block hover:scale-105 transition-all duration-500"
+              href="#skills"
+              >Skills</a
+            >
+          </li>
+          <li>
+            <a
+              class="p-4 hover:bg-gray-300 rounded-2xl inline-block hover:scale-105 transition-all duration-500"
               href="#project"
               >Project</a
             >
           </li>
           <li>
             <a
-              class="p-4 hover:bg-green-100 rounded-lg inline-block hover:scale-110 transition-all duration-500"
+              class="p-4 hover:bg-gray-300 rounded-2xl inline-block hover:scale-105 transition-all duration-500"
               href="#contact"
               >Contact</a
             >
@@ -124,7 +131,9 @@
           id="about"
           class="about my-25 rounded-4xl p-6 w-9/10 mx-auto scroll-mt-32"
         >
-          <h2 class="about-title text-center text-3xl font-bold mb-4">
+          <h2
+            class="about-title text-center text-3xl lg:text-4xl font-bold mb-4 lg:my-15"
+          >
             About me
           </h2>
           <div
@@ -135,16 +144,24 @@
               src="https://plus.unsplash.com/premium_photo-1681150897479-282fdba539cf?q=80&w=880&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
               alt="profile"
             />
-            <p class="about-desc text-center">
+            <p class="about-desc text-center lg:text-xl">
               I am a Fullstack Developer with a strong interest in developing
               responsive and user-friendly web interfaces. Ready to contribute
               to building optimal user experiences through modern and functional
               interface design.
             </p>
           </div>
-          <h3 class="skill-title text-2xl text-center my-10 font-bold">
-            Skill
-          </h3>
+        </section>
+        <!-- section skills -->
+        <section
+          id="skills"
+          class="skills my-25 rounded-4xl p-6 w-9/10 mx-auto scroll-mt-32"
+        >
+          <h2
+            class="skill-title text-center text-3xl lg:text-4xl font-bold mb-4 lg:my-15"
+          >
+            Skills
+          </h2>
           <ul class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
             <!-- html icon  -->
             <li
@@ -248,12 +265,14 @@
           id="project"
           class="project my-25 rounded-4xl p-6 w-9/10 mx-auto scroll-mt-32"
         >
-          <h2 class="project-title text-center text-3xl font-bold mb-4">
+          <h2
+            class="project-title text-center text-3xl lg:text-4xl font-bold mb-4 lg:my-15"
+          >
             Project
           </h2>
           <ul class="project-group flex flex-col gap-16">
             <li
-              class="project-item p-4 rounded-md group hover:shadow-lg transition-all duration-300 lg:flex gap-4"
+              class="project-item p-4 rounded-md group shadow-lg hover:scale-110 transition-all duration-300 lg:flex gap-4"
             >
               <img
                 class="project-item-img w-40 mx-auto mb-4"
@@ -262,7 +281,7 @@
               />
               <article>
                 <h3 class="project-item-title text-xl mb-4">Qarpa</h3>
-                <p class="project-item-desc text-justify">
+                <p class="project-item-desc text-justify lg:text-lg">
                   Qarpa is a platform designed to help small and medium
                   enterprises (SMEs) manage their businesses more easily and
                   efficiently. It offers features like POS, Inventory System,
@@ -283,7 +302,7 @@
               </article>
             </li>
             <li
-              class="project-item p-4 rounded-md hover:shadow-lg transition-all duration-300 lg:flex"
+              class="project-item p-4 rounded-md shadow-lg hover:scale-110 transition-all duration-300 lg:flex"
             >
               <img
                 class="project-item-img w-40 mx-auto mb-4"
@@ -292,7 +311,7 @@
               />
               <article>
                 <h3 class="project-item-title text-xl mb-4">Qarpa</h3>
-                <p class="project-item-desc text-justify">
+                <p class="project-item-desc text-justify lg:text-lg">
                   Qarpa is a platform designed to help small and medium
                   enterprises (SMEs) manage their businesses more easily and
                   efficiently. It offers features like POS, Inventory System,
@@ -319,7 +338,9 @@
           id="contact"
           class="contact my-25 rounded-4xl p-6 w-9/10 mx-auto scroll-mt-32"
         >
-          <h2 class="contact-title text-center text-3xl font-bold mb-4">
+          <h2
+            class="contact-title text-center text-3xl lg:text-4xl font-bold mb-4 lg:my-15"
+          >
             Contact Me
           </h2>
           <div
@@ -421,7 +442,7 @@
                 cols="4"
               ></textarea>
               <button
-                class="p-4 rounded-lg bg-green-100 hover:bg-green-300"
+                class="p-4 rounded-lg bg-gray-300 hover:bg-gray-500 hover:text-white transition-colors duration-300 ease-in-out"
                 type="submit"
               >
                 Submit
