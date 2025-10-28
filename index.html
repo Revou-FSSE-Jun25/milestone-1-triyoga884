@@ -29,6 +29,7 @@
       rel="stylesheet"
     />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <style>
       body {
         font-family: 'Rubik', sans-serif;
@@ -423,9 +424,9 @@
                 </a>
               </div>
               <form
-                action="koneksi.php"
+                id="contact-form"
                 method="post"
-                class="contact-form w-full flex flex-col gap-4 my-4 lg:w-2/3"
+                class="w-full flex flex-col gap-4 my-4 lg:w-2/3"
               >
                 <label for="name">Name</label>
                 <input
@@ -435,6 +436,7 @@
                   placeholder="elqlyn"
                   type="text"
                   id="name"
+                  name="name"
                 />
                 <label for="email">Email</label>
                 <input
@@ -444,6 +446,7 @@
                   placeholder="elqlyn@mail.to"
                   type="email"
                   id="email"
+                  name="email"
                 />
                 <label for="message">Message</label>
                 <textarea
@@ -451,9 +454,10 @@
                   class="p-4 shadow-md border border-gray-200 rounded-lg"
                   required
                   placeholder="The golden age will return again!"
-                  type="text"
                   id="message"
                   cols="4"
+                  rows="4"
+                  name="message"
                 ></textarea>
                 <button
                   class="p-4 rounded-lg bg-gray-300 hover:bg-gray-500 hover:text-white transition-colors duration-300 ease-in-out"
@@ -480,5 +484,25 @@
         TriYogaF</a
       >
     </footer>
+
+    <script>
+      emailjs.init('IIrnuaU0mfcrMV6w7');
+      const contactForm = document.getElementById('contact-form');
+      contactForm.addEventListener('submit', () => {
+        event.preventDefault();
+
+        emailjs
+          .sendForm('service_gfkykbk', 'template_wcxzvr6', contactForm)
+          .then(
+            () => {
+              alert('Message sent successfully!');
+              contactForm.reset();
+            },
+            (error) => {
+              alert('Failed to send message. Please try again later.');
+            }
+          );
+      });
+    </script>
   </body>
 </html>
